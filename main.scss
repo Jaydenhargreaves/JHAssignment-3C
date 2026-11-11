@@ -1,7 +1,9 @@
 @import './resets';
 @import './variables';
 
-@function
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
 
 body{
    background: $primary-color;
@@ -9,11 +11,14 @@ body{
 }
 
 .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     margin: 0 auto;
 
     #{&}_paragraph{
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(regular);
     }
 
     &:hover{
