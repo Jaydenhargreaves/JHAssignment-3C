@@ -1,5 +1,4 @@
 
-@import './resets';
 @import './variables';
 
 body{
@@ -26,61 +25,30 @@ header{
     padding: 1rem
 }
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
-}
+main{
+    height: 100%;
+    width: 100%;
 
-@mixin flexCenter($direction){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
+    .social-icon{
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
 
-@mixin theme($light-theme:true ) {
-    @if $light-theme {
-        background: lighten($primary-color, 100%);
-        color: darken($text-color, 100%);
+        a{
+            padding: 0.4rem;
+            &:hover: $secondary-color;
+
+        }
+
     }
 }
 
-@mixin mobile{
-    @media (max-width: $mobile ) {
-        @content; 
-    }
-}
+footer{
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: #fff;
 
-body{
-   background: $primary-color;
-   color: $text-color;
-}
-
-.main{
-    @include flexCenter(row);
-    width: 80% - 40%;
-    margin: 0 auto;
-
-    #{&}_paragraph1{
-        font-weight: weight(regular);
-    }
-
-    &:hover{
-        color: pink;
-    }  
-
-    #{&}_paragraph2 {
-    @extend .main_paragraph1;
-
-    &:hover {
-        color: $accent-color;
-    }
-}
-    
-    @include mobile{
-        flex-direction: column;
-    }
-}
-
-.light{
-    @include theme($light-theme: true);
-}

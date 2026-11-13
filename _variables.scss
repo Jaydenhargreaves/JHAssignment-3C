@@ -1,11 +1,5 @@
 $primary-color: #272727;
-$accent-color: #ff652f;
-$text-color: #fff;
-$font-weights:(
-    "regular": 400,
-    "medium": 500,
-    "bold": 700
-);
+$secondary-color: #ff652f;;
 
 * {
   box-sizing: border-box;
@@ -13,4 +7,3 @@ $font-weights:(
   padding: 0;
 }
 
-$mobile: 800px;
