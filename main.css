@@ -10,9 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background:
-    linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)),
-    url(./images/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(./images/model-1.jpg) center top;
   background-size: cover;
 }
 .home__name {
@@ -148,9 +146,7 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background:
-    linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)),
-    url(./images/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(./images/model-1.jpg) center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -179,8 +175,7 @@
   padding: 0.5rem;
   border-bottom: 5px solid #ff652f;
 }
-.about .jobs__job h2,
-.about .jobs__job h3 {
+.about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.5rem 0;
 }
 .about .jobs__job h6 {
@@ -200,9 +195,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background:
-    linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)),
-    url(./images/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(./images/model-1.jpg) center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -281,9 +274,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background:
-    linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)),
-    url(./images/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(./images/model-1.jpg) center top;
   background-size: cover;
 }
 .contact h2 {
@@ -296,7 +287,7 @@
   grid-gap: 2rem;
   font-size: 1.5rem;
 }
-.contact .social-icon {
+.contact .social-icons {
   position: initial;
   margin-top: 2rem;
 }
@@ -338,6 +329,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 body {
   background: #272727;
   color: #fff;
@@ -346,9 +345,7 @@ body {
   line-height: 1;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 400;
 }
 
@@ -393,4 +390,4 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #fff;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
